@@ -148,7 +148,7 @@ export default function Projects() {
             {projects.map((project, index) => (
               <div
                 key={index}
-                className={`group bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-xl overflow-hidden border border-blue-200/50 dark:border-blue-800/50 hover:border-blue-500 dark:hover:border-blue-500 transition-all duration-500 shadow-lg hover:shadow-2xl flex-shrink-0 w-[85vw] max-w-sm snap-center ${mounted ? 'animate-scale-in' : 'opacity-0'}`}
+                className={`group bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm rounded-xl overflow-hidden border border-blue-200/50 dark:border-blue-800/50 hover:border-blue-500 dark:hover:border-blue-500 transition-all duration-500 shadow-lg hover:shadow-2xl shrink-0 w-[85vw] max-w-sm snap-center ${mounted ? 'animate-scale-in' : 'opacity-0'}`}
                 style={{ animationDelay: `${0.2 + index * 0.1}s` }}
               >
                 {/* Project Header with Image */}
@@ -173,11 +173,6 @@ export default function Projects() {
 
                 {/* Project Content */}
                 <div className="p-5">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-xs text-blue-600 dark:text-blue-400 font-medium">
-                      {project.year}
-                    </span>
-                  </div>
                   <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                     {project.title}
                   </h3>
@@ -265,11 +260,6 @@ export default function Projects() {
 
               {/* Project Content */}
               <div className="p-5 sm:p-6 md:p-8">
-                <div className="flex items-center justify-between mb-2 sm:mb-3">
-                  <span className="text-xs sm:text-sm text-blue-600 dark:text-blue-400 font-medium">
-                    {project.year}
-                  </span>
-                </div>
                 <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-slate-900 dark:text-white mb-2 sm:mb-3 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">
                   {project.title}
                 </h3>
