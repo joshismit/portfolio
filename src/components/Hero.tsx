@@ -17,12 +17,12 @@ export default function Hero() {
   };
 
   return (
-    <section id="about" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20 sm:pt-24 pb-20 overflow-hidden">
+    <section id="about" className="relative min-h-screen flex items-center justify-center px-4 sm:px-6 pt-20 sm:pt-24 pb-8 sm:pb-12 overflow-hidden">
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className={`grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center transition-opacity duration-1000 ${mounted ? 'opacity-100' : 'opacity-0'}`}>
           
           {/* Left Column - Content */}
-          <div className="space-y-8 lg:space-y-10 order-2 lg:order-1">
+          <div className="space-y-8 lg:space-y-10 order-1 lg:order-1">
             {/* Main heading */}
             <div className="space-y-4">
               <h1 className={`text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight animate-fade-in-up`} style={{ animationDelay: '0.2s' }}>
@@ -44,8 +44,8 @@ export default function Hero() {
               </p>
             </div>
 
-            {/* CTA Buttons */}
-            <div className={`flex flex-wrap gap-3 sm:gap-4 pt-4 animate-fade-in-up`} style={{ animationDelay: '0.5s' }}>
+            {/* CTA Buttons - Hidden */}
+            <div className="hidden">
               <button
                 onClick={() => scrollToSection("projects")}
                 className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 dark:bg-blue-500 text-white rounded-lg sm:rounded-xl hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-300 text-sm sm:text-base font-semibold shadow-lg hover:shadow-xl hover:scale-105 overflow-hidden"
@@ -68,7 +68,7 @@ export default function Hero() {
           </div>
 
           {/* Right Column - Social Links and Location */}
-          <div className="order-1 lg:order-2 flex flex-col items-center lg:items-end justify-center space-y-6 sm:space-y-8">
+          <div className="order-2 lg:order-2 flex flex-col items-center lg:items-end justify-center space-y-6 sm:space-y-8">
             {/* Stats Cards */}
             <div className={`grid grid-cols-3 gap-3 sm:gap-4 w-full max-w-sm sm:max-w-none lg:w-auto animate-fade-in-up`} style={{ animationDelay: '0.3s' }}>
               {[
@@ -98,10 +98,12 @@ export default function Hero() {
                 rel="noopener noreferrer"
                 className="group relative w-full lg:w-auto inline-flex items-center justify-center gap-2 px-5 sm:px-6 md:px-8 py-2.5 sm:py-3 md:py-4 bg-purple-600 dark:bg-purple-500 text-white rounded-lg sm:rounded-xl hover:bg-purple-700 dark:hover:bg-purple-600 transition-all duration-300 text-xs sm:text-sm md:text-base font-semibold shadow-lg hover:shadow-xl hover:scale-105 overflow-hidden"
               >
-                <svg className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-y-[-2px] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                </svg>
-                Download Resume
+                <span className="relative z-10 flex items-center gap-2">
+                  <svg className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-y-[-2px] transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  Download Resume
+                </span>
                 <span className="absolute inset-0 bg-linear-to-r from-purple-700 to-pink-600 dark:from-purple-600 dark:to-pink-500 opacity-0 group-hover:opacity-100 transition-opacity"></span>
               </a>
             </div>

@@ -96,6 +96,46 @@ export default function Header() {
             </div>
           </div>
         </div>
+
+        {/* Mobile Menu Links */}
+        <div
+          className={`md:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+            isMobileMenuOpen ? "max-h-96 opacity-100 mt-4" : "max-h-0 opacity-0 mt-0"
+          }`}
+        >
+          <div className="pb-4 border-t border-blue-200/50 dark:border-blue-800/50 pt-4">
+            <nav className="flex flex-col gap-2">
+              <a
+                href="#projects"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="px-4 py-3 rounded-lg bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm text-slate-700 dark:text-slate-300 border border-blue-200/50 dark:border-blue-800/50 hover:bg-blue-50 dark:hover:bg-slate-700 hover:border-blue-500 dark:hover:border-blue-500 transition-all duration-200 font-medium"
+              >
+                Projects
+              </a>
+              <a
+                href="#experience"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="px-4 py-3 rounded-lg bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm text-slate-700 dark:text-slate-300 border border-blue-200/50 dark:border-blue-800/50 hover:bg-blue-50 dark:hover:bg-slate-700 hover:border-blue-500 dark:hover:border-blue-500 transition-all duration-200 font-medium"
+              >
+                Experience
+              </a>
+              <a
+                href="#skills"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="px-4 py-3 rounded-lg bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm text-slate-700 dark:text-slate-300 border border-blue-200/50 dark:border-blue-800/50 hover:bg-blue-50 dark:hover:bg-slate-700 hover:border-blue-500 dark:hover:border-blue-500 transition-all duration-200 font-medium"
+              >
+                Skills
+              </a>
+              <a
+                href="#contact"
+                onClick={() => setIsMobileMenuOpen(false)}
+                className="px-4 py-3 rounded-lg bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm text-slate-700 dark:text-slate-300 border border-blue-200/50 dark:border-blue-800/50 hover:bg-blue-50 dark:hover:bg-slate-700 hover:border-blue-500 dark:hover:border-blue-500 transition-all duration-200 font-medium"
+              >
+                Contact
+              </a>
+            </nav>
+          </div>
+        </div>
       </nav>
     </header>
   );

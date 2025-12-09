@@ -91,25 +91,29 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 md:gap-8 mb-10 sm:mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8 mb-10 sm:mb-12">
           {contactInfo.map((info, index) => (
             <a
               key={index}
               href={info.href}
-              className={`group bg-white/80 dark:bg-slate-800/80 backdrop-blur-sm p-5 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-blue-200/50 dark:border-blue-800/50 hover:border-blue-500 dark:hover:border-blue-500 transition-all duration-300 hover:scale-105 hover:shadow-xl ${mounted ? 'animate-scale-in' : 'opacity-0'}`}
+              className={`group bg-white/90 dark:bg-slate-800/90 backdrop-blur-sm p-4 sm:p-6 md:p-8 rounded-xl sm:rounded-2xl border border-blue-200/50 dark:border-blue-800/50 hover:border-blue-500 dark:hover:border-blue-500 transition-all duration-300 hover:scale-[1.02] sm:hover:scale-105 hover:shadow-xl ${mounted ? 'animate-scale-in' : 'opacity-0'}`}
               style={{ animationDelay: `${0.2 + index * 0.1}s` }}
             >
-              <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-lg sm:rounded-xl bg-linear-to-br ${info.color} flex items-center justify-center text-white mb-3 sm:mb-4 group-hover:scale-110 transition-transform shadow-lg`}>
-                <div className="text-white w-5 h-5 sm:w-6 sm:h-6">
-                  {info.icon}
+              <div className="flex items-start gap-3 sm:flex-col sm:items-start">
+                <div className={`w-12 h-12 sm:w-14 sm:h-14 rounded-xl bg-linear-to-br ${info.color} flex items-center justify-center text-white shrink-0 group-hover:scale-110 transition-transform shadow-lg`}>
+                  <div className="text-white w-5 h-5 sm:w-6 sm:h-6">
+                    {info.icon}
+                  </div>
+                </div>
+                <div className="flex-1 min-w-0 sm:flex-none">
+                  <h3 className="text-sm sm:text-lg font-semibold text-slate-900 dark:text-white mb-1 sm:mb-2">
+                    {info.label}
+                  </h3>
+                  <p className="text-xs sm:text-sm md:text-base text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors break-words">
+                    {info.value}
+                  </p>
                 </div>
               </div>
-              <h3 className="text-base sm:text-lg font-semibold text-slate-900 dark:text-white mb-1 sm:mb-2">
-                {info.label}
-              </h3>
-              <p className="text-xs sm:text-sm md:text-base text-blue-600 dark:text-blue-400 group-hover:text-blue-700 dark:group-hover:text-blue-300 transition-colors break-words">
-                {info.value}
-              </p>
             </a>
           ))}
         </div>
