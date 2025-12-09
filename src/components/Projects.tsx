@@ -62,7 +62,7 @@ export default function Projects() {
 
   const projects = [
     {
-      year: "2024",
+      //year: "2025",
       title: "HMO Checker",
       description:
         "A comprehensive HMO (House in Multiple Occupation) checking platform with user authentication and property management features. Built with modern web technologies for property verification and compliance checking.",
@@ -73,7 +73,7 @@ export default function Projects() {
       image: "/projects/hmochecker.png",
     },
     {
-      year: "2024",
+      //year: "2025",
       title: "Disctopia",
       description:
         "A dynamic streaming platform and podcast hosting service that empowers content creators. Features music streaming, podcast hosting, video content, and enterprise solutions with advanced content delivery and monetization tools.",
@@ -84,7 +84,7 @@ export default function Projects() {
       image: "/projects/disctopia.png",
     },
     {
-      year: "2024",
+      //year: "2024",
       title: "24hr Therapy",
       description:
         "A 24/7 online therapy platform connecting users with professional therapists. Features quick connect functionality, multiple payment options, and a user-friendly interface for accessible mental health support anytime, anywhere.",
@@ -95,7 +95,7 @@ export default function Projects() {
       image: "/projects/24hrtherapy.png",
     },
     {
-      year: "2024",
+      //year: "2024",
       title: "Lorenzo Landscape",
       description:
         "A professional landscaping company website showcasing services, portfolio, and client testimonials. Features responsive design, modern UI components, and seamless user experience for landscape design and maintenance services.",
@@ -105,7 +105,7 @@ export default function Projects() {
       image: "/projects/lorenzo-landscape.png",
     },
     {
-      year: "2024",
+      //year: "2025",
       title: "E-Commerce MERN",
       description:
         "A full-stack e-commerce platform with user authentication, product management, shopping cart, and checkout functionality. Built with MERN stack (MongoDB, Express.js, React.js, Node.js) and Tailwind CSS.",
@@ -115,7 +115,7 @@ export default function Projects() {
       image: "/projects/ecommerce-mern.png",
     },
     {
-      year: "2024",
+      //year: "2024",
       title: "Educity",
       description:
         "An educational web application showcasing interactive UI components and responsive layouts. Designed to provide a clean, modern interface for displaying courses, learning materials, and educational content.",
