@@ -44,8 +44,8 @@ export default function Hero() {
               </p>
             </div>
 
-            {/* CTA Buttons - Hidden */}
-            <div className="hidden">
+            {/* CTA Buttons - Visible on Desktop */}
+            <div className={`hidden md:flex flex-wrap gap-3 sm:gap-4 pt-4 animate-fade-in-up`} style={{ animationDelay: '0.5s' }}>
               <button
                 onClick={() => scrollToSection("projects")}
                 className="group relative px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 dark:bg-blue-500 text-white rounded-lg sm:rounded-xl hover:bg-blue-700 dark:hover:bg-blue-600 transition-all duration-300 text-sm sm:text-base font-semibold shadow-lg hover:shadow-xl hover:scale-105 overflow-hidden"
