@@ -29,7 +29,7 @@ export default function Experience() {
     },
     {
       company: "E2M Solutions",
-      location: "Remote",
+      location: "Ahmedabad,GJ",
       position: "SEO Analyst",
       period: "Oct 2022 - Aug 2023",
       isCurrent: false,
@@ -40,7 +40,7 @@ export default function Experience() {
     },
     {
       company: "Milestone Inc",
-      location: "Remote",
+      location: "Ahmedabad,GJ",
       position: "SEO Analyst",
       period: "July 2022 - Oct 2022",
       isCurrent: false,
@@ -51,7 +51,7 @@ export default function Experience() {
     },
     {
       company: "ADIT Digital Marketing Agency",
-      location: "Remote",
+      location: "Ahmedabad,GJ",
       position: "SEO Executive",
       period: "Aug 2019 - Jun 2022",
       isCurrent: false,
