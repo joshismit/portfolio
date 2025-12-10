@@ -106,7 +106,7 @@ export default function Projects() {
     },
     {
       //year: "2025",
-      title: "E-Commerce MERN",
+      title: "Forever",
       description:
         "A full-stack e-commerce platform with user authentication, product management, shopping cart, and checkout functionality. Built with MERN stack (MongoDB, Express.js, React.js, Node.js) and Tailwind CSS.",
       liveUrl: "https://ecommerce-frontend-ivory-beta.vercel.app",
