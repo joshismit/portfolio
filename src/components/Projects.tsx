@@ -119,7 +119,7 @@ export default function Projects() {
       title: "Educity",
       description:
         "An educational web application showcasing interactive UI components and responsive layouts. Designed to provide a clean, modern interface for displaying courses, learning materials, and educational content.",
-      liveUrl: "https://educational-demo-by-smit.netlify.app",
+      liveUrl: "https://edussity.vercel.app/",
       techStack: ["React.js", "CSS3", "Tailwind CSS"],
       gradient: "from-teal-500 to-cyan-500",
       image: "/projects/educity.png",
